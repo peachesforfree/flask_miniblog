@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
+<table>
+    <tr alight="top">
+        <td><img src="{{ user.avater(128) }}"</td>
+    </tr>
+</table>
     <h1>User: {{ user.username }}</h1>
     <hr>
     {% for post in posts %}
