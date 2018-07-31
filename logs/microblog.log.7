@@ -1,0 +1,108 @@
+2018-07-30 14:17:54,133 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 14:18:34,839 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 14:18:46,157 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 14:47:29,272 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 14:57:14,939 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 14:58:15,416 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 14:58:31,828 ERROR: Exception on /user/zed [GET] [in /nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/routes.py", line 81, in user
+    return render_template('user.html', user=user, posts=posts)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/templates/user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/templates/base.html", line 28, in top-level template code
+    {% block content %}{% endblock %}
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/templates/user.html", line 11, in block "content"
+    <p>{{ user.followers.count.count() }} followers, {{ user.followed.count() }} following.</p>
+jinja2.exceptions.UndefinedError: 'method object' has no attribute 'count'
+2018-07-30 14:59:04,424 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 15:01:10,180 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 15:17:45,817 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 15:17:58,192 ERROR: Exception on / [POST] [in /nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/routes.py", line 22, in index
+    post = Post(body=form.post.date, author=current_user)
+NameError: name 'Post' is not defined
+2018-07-30 15:18:31,514 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 15:18:59,650 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 15:19:14,334 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 15:19:39,684 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 15:19:51,329 ERROR: Exception on / [POST] [in /nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/routes.py", line 22, in index
+    post = Post(body=form.post.data, author=current_user)
+NameError: name 'Post' is not defined
+2018-07-30 15:20:19,328 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 15:20:20,508 ERROR: Exception on / [GET] [in /nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/routes.py", line 28, in index
+    return render_template('index.html', title='Home', form=form, posts=post)
+UnboundLocalError: local variable 'post' referenced before assignment

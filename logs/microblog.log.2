@@ -1,0 +1,117 @@
+2018-07-30 15:44:48,748 ERROR: Exception on /index [GET] [in /nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/routes.py", line 28, in index
+    posts = current_user.followed_posts().PAGINATE(
+AttributeError: 'BaseQuery' object has no attribute 'PAGINATE'
+2018-07-30 15:44:50,425 ERROR: Exception on /index [GET] [in /nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/routes.py", line 28, in index
+    posts = current_user.followed_posts().PAGINATE(
+AttributeError: 'BaseQuery' object has no attribute 'PAGINATE'
+2018-07-30 15:44:52,058 ERROR: Exception on /explore [GET] [in /nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/routes.py", line 38, in explore
+    page, app.config['POST_PER_PAGE'], False)
+KeyError: 'POST_PER_PAGE'
+2018-07-30 15:44:54,264 ERROR: Exception on /index [GET] [in /nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/routes.py", line 28, in index
+    posts = current_user.followed_posts().PAGINATE(
+AttributeError: 'BaseQuery' object has no attribute 'PAGINATE'
+2018-07-30 15:45:15,862 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 15:45:19,848 ERROR: Exception on /explore [GET] [in /nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/routes.py", line 38, in explore
+    page, app.config['POST_PER_PAGE'], False)
+KeyError: 'POST_PER_PAGE'
+2018-07-30 15:45:31,633 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 15:52:11,468 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 15:52:22,922 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 15:53:58,952 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 15:58:49,870 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 16:02:00,498 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 16:02:19,376 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 16:48:47,687 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 17:13:06,490 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:44]
+2018-07-30 17:14:12,516 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:44]
+2018-07-30 17:17:29,342 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 17:18:05,511 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 17:20:33,106 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 17:22:43,870 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 17:24:31,865 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 17:24:59,577 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:44]
+2018-07-30 17:28:17,032 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:44]
+2018-07-30 17:31:11,777 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:44]
+2018-07-30 18:12:15,675 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:45]
+2018-07-30 18:16:59,784 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:45]
+2018-07-30 18:21:13,735 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:45]

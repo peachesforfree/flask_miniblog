@@ -1,0 +1,123 @@
+2018-07-30 15:20:23,575 ERROR: Exception on /index [GET] [in /nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/routes.py", line 28, in index
+    return render_template('index.html', title='Home', form=form, posts=post)
+UnboundLocalError: local variable 'post' referenced before assignment
+2018-07-30 15:20:26,385 ERROR: Exception on /index [GET] [in /nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/routes.py", line 28, in index
+    return render_template('index.html', title='Home', form=form, posts=post)
+UnboundLocalError: local variable 'post' referenced before assignment
+2018-07-30 15:21:42,240 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 15:22:07,137 ERROR: Exception on /login [POST] [in /nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/routes.py", line 38, in login
+    if user is None or not user.check_password(form.password.data):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/models.py", line 36, in check_password
+    return check_password_hash(self.password_hash, password)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/werkzeug/security.py", line 245, in check_password_hash
+    if pwhash.count('$') < 2:
+AttributeError: 'NoneType' object has no attribute 'count'
+2018-07-30 15:22:13,117 ERROR: Exception on /login [POST] [in /nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/routes.py", line 38, in login
+    if user is None or not user.check_password(form.password.data):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/models.py", line 36, in check_password
+    return check_password_hash(self.password_hash, password)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/werkzeug/security.py", line 245, in check_password_hash
+    if pwhash.count('$') < 2:
+AttributeError: 'NoneType' object has no attribute 'count'
+2018-07-30 15:22:20,057 ERROR: Exception on /login [POST] [in /nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/routes.py", line 38, in login
+    if user is None or not user.check_password(form.password.data):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/models.py", line 36, in check_password
+    return check_password_hash(self.password_hash, password)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/werkzeug/security.py", line 245, in check_password_hash
+    if pwhash.count('$') < 2:
+AttributeError: 'NoneType' object has no attribute 'count'
+2018-07-30 15:22:24,788 ERROR: Exception on /login [POST] [in /nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/routes.py", line 38, in login
+    if user is None or not user.check_password(form.password.data):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/models.py", line 36, in check_password
+    return check_password_hash(self.password_hash, password)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/werkzeug/security.py", line 245, in check_password_hash
+    if pwhash.count('$') < 2:
+AttributeError: 'NoneType' object has no attribute 'count'

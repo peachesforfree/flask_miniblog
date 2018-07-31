@@ -1,0 +1,117 @@
+2018-07-30 11:51:37,879 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 11:56:43,021 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 11:56:57,154 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 11:57:20,565 ERROR: Exception on /edit_profile [GET] [in /nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/routes.py", line 87, in edit_profile
+    form = EditProfileForm(currentuser.useranme)
+NameError: name 'currentuser' is not defined
+2018-07-30 11:57:27,674 ERROR: Exception on /edit_profile [GET] [in /nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/routes.py", line 87, in edit_profile
+    form = EditProfileForm(currentuser.useranme)
+NameError: name 'currentuser' is not defined
+2018-07-30 11:58:12,187 ERROR: Exception on /edit_profile [GET] [in /nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/routes.py", line 87, in edit_profile
+    form = EditProfileForm(currentuser.username)
+NameError: name 'currentuser' is not defined
+2018-07-30 11:58:14,390 ERROR: Exception on /edit_profile [GET] [in /nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/routes.py", line 87, in edit_profile
+    form = EditProfileForm(currentuser.username)
+NameError: name 'currentuser' is not defined
+2018-07-30 11:58:19,454 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 11:58:22,531 ERROR: Exception on /edit_profile [GET] [in /nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/nfs/2016/s/sbalcort/starfleet/microblog/app/routes.py", line 87, in edit_profile
+    form = EditProfileForm(currentuser.username)
+NameError: name 'currentuser' is not defined
+2018-07-30 11:59:17,723 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 12:00:59,028 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 12:02:27,292 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 12:20:46,286 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 12:21:13,469 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 12:24:00,517 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 12:26:01,254 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 12:26:50,350 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 12:28:30,372 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 12:30:16,728 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 12:30:59,408 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 12:32:17,561 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 12:32:39,494 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 12:32:44,860 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 14:09:33,315 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 14:10:35,123 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 14:17:32,637 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
+2018-07-30 14:17:43,910 INFO: Microblog startup [in /nfs/2016/s/sbalcort/starfleet/microblog/app/__init__.py:43]
